@@ -1,14 +1,26 @@
 <html>
   <head>
+    <title>Image Classifier : Web Application</title>
     <!-- Load the latest version of TensorFlow.js -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
+
   <body>
+    <h1> Image Classifier : Web Application </h1>
     <div id="console"></div>
     <!-- Add an image that we will use to test -->
     <!--img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/-->
+       <section>
+      <p class='section-head'> Description : </p>
+      <p class='section-head'> a) Load pre-trained MobileNet Model
+          b) Make predictions through webcam
+          c) Use K-Nearest Neighbors Classifier into different classifiers
+          d) Predict on the fly using webcam
+      </p>
     <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
     <!--video autoplay playsinline muted id="webcam" width="224" height="224"></video-->
     <!-- Load index.js after the content of the page -->
